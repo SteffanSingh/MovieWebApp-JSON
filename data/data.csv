@@ -1,0 +1,3 @@
+person_id,person_name,movie_id,movie_name,director,year,rating
+1,Alice,1,Inception,Christopher Nolan,2010,8.8
+1,Alice,2,The Dark Knight,Christopher Nolan,2008,9.0
