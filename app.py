@@ -42,7 +42,7 @@ def user_movie_list(user_id):
 
 @app.route("/add_user", methods = ["GET","POST"])
 def add_user():
-    """function to implement the add a user in the given user data."""
+    """function to implement the add user in the given user data."""
     if request.method == "POST":
         users = read_data()
         name = request.form['name']
@@ -89,6 +89,10 @@ def add_user_movie(user_id):
         Url = f"http://www.omdbapi.com/?apikey={Key}&t={name}"
         res = requests.get(Url)
         data = res.json()
+
+        if data['Response'] == "False":
+
+            return render_template("movie_not_found.html", user_name=user_name,user_id=user_id)
         movie["movie_name"] = data["Title"]
         movie["rating"] = data["imdbRating"]
         movie["year"] = data["Year"]
@@ -117,20 +121,22 @@ def update_movie(user_id, movie_id):
     user_name = users_list[index]
     users = read_data()
     user_movie_list = data_manager.get_user_movies(user_id)
-    if request.method == "post":
+    if request.method == "POST":
         rating = request.form["rating"]
         note = request.form["note"]
-        for movie in user_movie_list:
+        for index,movie in enumerate(user_movie_list):
             if int(movie["movie_id"]) == movie_id:
-                movie.rating = rating
-                movie.note = note
+                movie["rating"] = rating
+                movie["note"] = note
+                users[str(user_id)]["movies"][index].update(movie)
+
                 with open("data/data.json", "w") as fileObject:
                     fileObject.write(json.dumps(users, indent=4))
-                return render_template("favourite_movie.html", user_name=user_name, user_id=user_id,movie_id=movie["movie_id"],movies=user_movie_list)
+                return render_template("favourite_movie.html", user_name=user_name, user_id=user_id,movie_id=movie_id,movies=user_movie_list)
 
-    return render_template("update.html", user_name=user_name, movies=user_movie_list, user_id=user_id)
+    return render_template("update.html", user_name=user_name,movie_id=movie_id, movies=user_movie_list, user_id=user_id)
 
-@app.route("/users/<int:user_id>/delete_movie/<int:movie_id>")
+@app.route("/users/<int:user_id>/delete_movie/<int:movie_id>",methods=["GET"])
 def delete_movie(user_id, movie_id):
     """function to implement to delete a movie with a given id for a given user"""
     users_list = data_manager.get_all_users()
