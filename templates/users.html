@@ -8,12 +8,22 @@
 
 </head>
 <body >
-<h1>Users</h1>
+<h1 style="text-align:center">MovieWeb App</h1>
 
+
+
+<h3>Users:</h3>
     <ul>
 
        {%  for  user in users %}
-        <li>{{user}} ~ <a href="http://127.0.0.1:5000/users/{{users.index(user)+1 }}">Favourite movies</a></li>
+        <li>{{user}} ~ <a href="http://127.0.0.1:5000/users/{{user_id_list[users.index(user)] }}">Favourite movies</a></li>
+
+        <span>
+            <form action="/delete_user/{{user_id_list[users.index(user)] }}" >
+            <input style="background-color:light grey; color:red;" type="Submit" value="Delete user">
+        </form>
+        </span>
+
         {% endfor %}
     </ul>
 
@@ -21,7 +31,7 @@
 
     <form action="/add_user" >
 
-     <input type="Submit" value="Add User">
+     <input style="background-color:light grey; color:green;" type="Submit" value="Add User">
 
      </form>
 

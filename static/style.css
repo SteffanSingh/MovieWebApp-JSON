@@ -2,3 +2,16 @@
  background-color:#ADD8E6; color: #333; padding: 10px;
 
 }
+
+input{
+    cursor:pointer;
+}
+h1{
+text-align:center;
+}
+
+img{
+
+width:150px;
+height:150px;
+}
