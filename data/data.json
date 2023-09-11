@@ -49,27 +49,6 @@
         "name": "Bob",
         "movies": [
             {
-                "movie_name": "Titanic",
-                "rating": "7.9",
-                "year": "1997",
-                "director": "James Cameron",
-                "movie_id": 1
-            },
-            {
-                "movie_name": "Titanic",
-                "rating": "7.9",
-                "year": "1997",
-                "director": "James Cameron",
-                "movie_id": 2
-            },
-            {
-                "movie_name": "Mission: Impossible",
-                "rating": "7.1",
-                "year": "1996",
-                "director": "Brian De Palma",
-                "movie_id": 3
-            },
-            {
                 "movie_name": "Mission: Impossible",
                 "rating": "7.1",
                 "year": "1996",
@@ -84,18 +63,31 @@
                 "movie_id": 5
             },
             {
-                "movie_name": "Ninja",
-                "rating": "5.5",
-                "year": "2009",
-                "director": "Isaac Florentine",
-                "movie_id": 6
-            },
-            {
                 "movie_name": "Do or Die",
                 "rating": "4.3",
                 "year": "1991",
                 "director": "Andy Sidaris",
-                "movie_id": 7
+                "movie_id": 7,
+                "poster": "https://m.media-amazon.com/images/M/MV5BNDczODhhZmYtNWE2OS00ZTk5LTg2MTgtNTMyM2Y0Mjc2OTE0XkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_SX300.jpg",
+                "note": []
+            },
+            {
+                "movie_name": "Ninja",
+                "rating": "5.5",
+                "year": "2009",
+                "director": "Isaac Florentine",
+                "movie_id": 5,
+                "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
+                "note": []
+            },
+            {
+                "movie_name": "Titanic",
+                "rating": "7.9",
+                "year": "1997",
+                "director": "James Cameron",
+                "movie_id": 5,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+                "note": []
             }
         ]
     },
@@ -127,14 +119,6 @@
                 "year": "1996",
                 "director": "Brian De Palma",
                 "movie_id": 1,
-                "poster": "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SX300.jpg"
-            },
-            {
-                "movie_name": "Mission: Impossible",
-                "rating": "7.1",
-                "year": "1996",
-                "director": "Brian De Palma",
-                "movie_id": 3,
                 "poster": "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SX300.jpg"
             },
             {

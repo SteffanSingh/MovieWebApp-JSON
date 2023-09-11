@@ -129,6 +129,7 @@ def update_movie(user_id, movie_id):
                 return render_template("favourite_movie.html", user_name=user_name, user_id=user_id,movie_id=movie["movie_id"],movies=user_movie_list)
 
     return render_template("update.html", user_name=user_name, movies=user_movie_list, user_id=user_id)
+
 @app.route("/users/<int:user_id>/delete_movie/<int:movie_id>")
 def delete_movie(user_id, movie_id):
     """function to implement to delete a movie with a given id for a given user"""
