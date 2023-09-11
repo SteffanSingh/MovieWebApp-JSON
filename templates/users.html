@@ -13,25 +13,27 @@
 
 
 <h3>Users:</h3>
-    <ul>
+    <ol>
 
        {%  for  user in users %}
-        <li>{{user}} ~ <a href="http://127.0.0.1:5000/users/{{user_id_list[users.index(user)] }}">Favourite movies</a></li>
+<div style="display:flex;flex-direction:column;">
+            <li><strong> <em>{{user}}</em> </strong> ~<a href="http://127.0.0.1:5000/users/{{user_id_list[users.index(user)] }}">Favourite movies</a></li>
 
         <span>
             <form action="/delete_user/{{user_id_list[users.index(user)] }}" >
             <input style="background-color:light grey; color:red;" type="Submit" value="Delete user">
         </form>
         </span>
+        </div>
 
         {% endfor %}
-    </ul>
+    </ol>
 
 
 
     <form action="/add_user" >
 
-     <input style="background-color:light grey; color:green;" type="Submit" value="Add User">
+     <input style="background-color:light grey; color:green; text-align:center" type="Submit" value="Add User">
 
      </form>
 

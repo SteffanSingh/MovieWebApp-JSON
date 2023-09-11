@@ -4,7 +4,7 @@
         "movies": [
             {
                 "movie_name": "Inception",
-                "rating": "8",
+                "rating": "7.5",
                 "year": "2010",
                 "director": "Christopher Nolan",
                 "movie_id": 9,
@@ -19,6 +19,24 @@
                 "movie_id": 2,
                 "poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
                 "note": "Nice Movie"
+            },
+            {
+                "movie_name": "Ninja",
+                "rating": "5.5",
+                "year": "2009",
+                "director": "Isaac Florentine",
+                "movie_id": 3,
+                "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
+                "note": []
+            },
+            {
+                "movie_name": "Mission: Impossible",
+                "rating": "8",
+                "year": "1996",
+                "director": "Brian De Palma",
+                "movie_id": 4,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SX300.jpg",
+                "note": "Awesome movie"
             }
         ]
     },
@@ -75,71 +93,6 @@
             }
         ]
     },
-    "6": {
-        "name": "Ashutosh",
-        "movies": [
-            {
-                "movie_name": "Mission: Impossible",
-                "rating": "7.1",
-                "year": "1996",
-                "director": "Brian De Palma",
-                "movie_id": 1,
-                "poster": "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SX300.jpg"
-            },
-            {
-                "movie_name": "Inception",
-                "rating": "8.8",
-                "year": "2010",
-                "director": "Christopher Nolan",
-                "movie_id": 4,
-                "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
-            },
-            {
-                "movie_name": "Die Another Day",
-                "rating": "6.1",
-                "year": "2002",
-                "director": "Lee Tamahori",
-                "movie_id": 5,
-                "poster": "https://m.media-amazon.com/images/M/MV5BMDlmY2Y2ZWQtNTZjMy00NGRkLTlkMjctMjA1MzdjMmI1NTQ1XkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_SX300.jpg"
-            },
-            {
-                "movie_name": "Ninja",
-                "rating": "5.5",
-                "year": "2009",
-                "director": "Isaac Florentine",
-                "movie_id": 4,
-                "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
-                "note": []
-            },
-            {
-                "movie_name": "Ninja",
-                "rating": "5.5",
-                "year": "2009",
-                "director": "Isaac Florentine",
-                "movie_id": 5,
-                "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
-                "note": []
-            },
-            {
-                "movie_name": "The Chaos",
-                "rating": "8.3",
-                "year": "2013\u2013",
-                "director": "N/A",
-                "movie_id": 6,
-                "poster": "https://m.media-amazon.com/images/M/MV5BMzRhMzQ4ODktZGQwZS00NDliLThhNmYtMGU0YWY1MDg2M2FhXkEyXkFqcGdeQXVyODQyNDI4ODg@._V1_SX300.jpg",
-                "note": []
-            },
-            {
-                "movie_name": "The Amazing Spider-Man",
-                "rating": "6.9",
-                "year": "2012",
-                "director": "Marc Webb",
-                "movie_id": 7,
-                "poster": "https://m.media-amazon.com/images/M/MV5BMjMyOTM4MDMxNV5BMl5BanBnXkFtZTcwNjIyNzExOA@@._V1_SX300.jpg",
-                "note": []
-            }
-        ]
-    },
     "7": {
         "name": "Steffan",
         "movies": [
@@ -151,7 +104,56 @@
                 "movie_id": 1,
                 "poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
                 "note": []
+            },
+            {
+                "movie_name": "Ninja",
+                "rating": "6.7",
+                "year": "2009",
+                "director": "Isaac Florentine",
+                "movie_id": 2,
+                "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
+                "note": "action"
+            },
+            {
+                "movie_name": "A Classic Horror Story",
+                "rating": "5.7",
+                "year": "2021",
+                "director": "Roberto De Feo, Paolo Strippoli",
+                "movie_id": 3,
+                "poster": "https://m.media-amazon.com/images/M/MV5BNGZmODA3ZjAtMDU4Zi00MWMxLWEzNTAtMGZmMmNjZGFlOTRhXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg",
+                "note": []
             }
         ]
+    },
+    "10": {
+        "name": "Die another day",
+        "movies": []
+    },
+    "11": {
+        "name": "Samrat Singh",
+        "movies": [
+            {
+                "movie_name": "Ninja",
+                "rating": "6",
+                "year": "2009",
+                "director": "Isaac Florentine",
+                "movie_id": 1,
+                "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
+                "note": ""
+            },
+            {
+                "movie_name": "Die Another Day",
+                "rating": "7",
+                "year": "2002",
+                "director": "Lee Tamahori",
+                "movie_id": 2,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDlmY2Y2ZWQtNTZjMy00NGRkLTlkMjctMjA1MzdjMmI1NTQ1XkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_SX300.jpg",
+                "note": ""
+            }
+        ]
+    },
+    "12": {
+        "name": "Ashutosh Kapoor",
+        "movies": []
     }
 }

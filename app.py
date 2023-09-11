@@ -64,7 +64,7 @@ def add_user():
 
 @app.route("/delete_user/<int:user_id>", methods=["GET","DELETE"])
 def delete_user(user_id):
-    """function to implement the delete user from a given user list."""
+    """function to implement to delete user from a given user list."""
     all_user_data = read_data()
     if str(user_id) in list(all_user_data.keys()):
         all_user_data.pop(str(user_id))
@@ -89,9 +89,7 @@ def add_user_movie(user_id):
         Url = f"http://www.omdbapi.com/?apikey={Key}&t={name}"
         res = requests.get(Url)
         data = res.json()
-
         if data['Response'] == "False":
-
             return render_template("movie_not_found.html", user_name=user_name,user_id=user_id)
         movie["movie_name"] = data["Title"]
         movie["rating"] = data["imdbRating"]
@@ -133,10 +131,9 @@ def update_movie(user_id, movie_id):
                 with open("data/data.json", "w") as fileObject:
                     fileObject.write(json.dumps(users, indent=4))
                 return render_template("favourite_movie.html", user_name=user_name, user_id=user_id,movie_id=movie_id,movies=user_movie_list)
-
     return render_template("update.html", user_name=user_name,movie_id=movie_id, movies=user_movie_list, user_id=user_id)
 
-@app.route("/users/<int:user_id>/delete_movie/<int:movie_id>",methods=["GET"])
+@app.route("/users/<int:user_id>/delete_movie/<int:movie_id>", methods=["POST"])
 def delete_movie(user_id, movie_id):
     """function to implement to delete a movie with a given id for a given user"""
     users_list = data_manager.get_all_users()
@@ -153,9 +150,6 @@ def delete_movie(user_id, movie_id):
     return render_template("favourite_movie.html", user_name=user_name, movies=user_movie_list, user_id=user_id)
 
 
-@app.errorhandler(404)
-def page_not_found(e):
-    return render_template('404.html'), 404
 
 if __name__ == '__main__':
     app.run(debug=True)

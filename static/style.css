@@ -16,3 +16,6 @@ img{
 width:150px;
 height:150px;
 }
+
+ol{
+ display:flex;flex-wrap:wrap;justify-content:space-between;
