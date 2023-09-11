@@ -29,11 +29,17 @@
         </div>
            <span style="display:flex">
                <form action="/users/{{user_id}}/update_movie/{{movie.movie_id}}"  >
-            <input type="Submit"  value="EDIT" >
+            <input type="Submit"
+                   style="margin-bottom:20px;
+                   color:light yellow; border-radius:10px;padding:5px 10px 5px 10px ;"
+                            value="EDIT" >
+
         </form> <br>
 
-             <form action="/users/{{user_id}}/delete_movie/{{movie.movie_id}}" method="POST">
-                  <input style="margin-bottom:10px; margin-left:20px" type="Submit"  value="DELETE" >
+             <form action="/users/{{user_id}}/delete_movie/{{movie.movie_id}}" >
+                  <input style="margin-bottom:20px;
+                  margin-left:20px;color:red; border-radius:10px;padding:5px;"
+                         type="Submit"  value="DELETE" >
 
             </form>
         </span>
@@ -46,16 +52,22 @@
 
 
 
-    <div style="display:flex">
+    <div style="display:flex;justify-content:center;  ">
 
         <form action="/users/{{user_id}}/add_movie">
 
-     <input type="Submit" value="Add Movie">
+     <input style="margin-bottom:20px;
+                  margin-left:20px;color:green; border-radius:10px;
+                  padding:10px;"
+             type="Submit" value="Add Movie">
 
      </form>
         <form action="/users">
 
-             <input style="margin-left:20px" type="Submit" value=" Go back to Users List">
+             <input style="margin-bottom:20px;
+                  margin-left:20px;color:green; border-radius:10px;
+                  padding:10px;"
+                    type="Submit" value=" Go back to Users List">
 
             </form>
     </div>

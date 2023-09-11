@@ -3,15 +3,6 @@
         "name": "Alice",
         "movies": [
             {
-                "movie_name": "Inception",
-                "rating": "7.5",
-                "year": "2010",
-                "director": "Christopher Nolan",
-                "movie_id": 9,
-                "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
-                "note": "Nice Movie"
-            },
-            {
                 "movie_name": "Titanic",
                 "rating": "8",
                 "year": "1997",
@@ -22,12 +13,12 @@
             },
             {
                 "movie_name": "Ninja",
-                "rating": "5.5",
+                "rating": "6",
                 "year": "2009",
                 "director": "Isaac Florentine",
                 "movie_id": 3,
                 "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
-                "note": []
+                "note": "Nice Movie"
             },
             {
                 "movie_name": "Mission: Impossible",
@@ -37,6 +28,15 @@
                 "movie_id": 4,
                 "poster": "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SX300.jpg",
                 "note": "Awesome movie"
+            },
+            {
+                "movie_name": "Die Another Day",
+                "rating": "6.1",
+                "year": "2002",
+                "director": "Lee Tamahori",
+                "movie_id": 4,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDlmY2Y2ZWQtNTZjMy00NGRkLTlkMjctMjA1MzdjMmI1NTQ1XkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_SX300.jpg",
+                "note": []
             }
         ]
     },
@@ -57,7 +57,16 @@
                 "rating": "7.9",
                 "year": "1997",
                 "director": "James Cameron",
-                "movie_id": 2,
+                "movie_id": 3,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+                "note": []
+            },
+            {
+                "movie_name": "Titanic",
+                "rating": "7.9",
+                "year": "1997",
+                "director": "James Cameron",
+                "movie_id": 3,
                 "poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
                 "note": []
             }
@@ -67,34 +76,113 @@
         "name": " Samrat Singh",
         "movies": [
             {
-                "movie_name": "Inception",
-                "rating": "8.8",
-                "year": "2010",
-                "director": "Christopher Nolan",
-                "movie_id": 8
+                "movie_name": "Mission: Impossible",
+                "rating": "9",
+                "year": "1996",
+                "director": "Brian De Palma",
+                "movie_id": 3,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SX300.jpg",
+                "note": "Awesome movie"
+            },
+            {
+                "movie_name": "Ninja",
+                "rating": "6",
+                "year": "2009",
+                "director": "Isaac Florentine",
+                "movie_id": 4,
+                "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
+                "note": "Nice Movie"
+            },
+            {
+                "movie_name": "Titanic",
+                "rating": "7.9",
+                "year": "1997",
+                "director": "James Cameron",
+                "movie_id": 3,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+                "note": []
+            },
+            {
+                "movie_name": "Die Another Day",
+                "rating": "6.1",
+                "year": "2002",
+                "director": "Lee Tamahori",
+                "movie_id": 4,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDlmY2Y2ZWQtNTZjMy00NGRkLTlkMjctMjA1MzdjMmI1NTQ1XkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_SX300.jpg",
+                "note": []
+            },
+            {
+                "movie_name": "Die Another Day",
+                "rating": "6.1",
+                "year": "2002",
+                "director": "Lee Tamahori",
+                "movie_id": 5,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDlmY2Y2ZWQtNTZjMy00NGRkLTlkMjctMjA1MzdjMmI1NTQ1XkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_SX300.jpg",
+                "note": []
             },
             {
                 "movie_name": "Do or Die",
                 "rating": "4.3",
                 "year": "1991",
                 "director": "Andy Sidaris",
-                "movie_id": 3,
+                "movie_id": 6,
                 "poster": "https://m.media-amazon.com/images/M/MV5BNDczODhhZmYtNWE2OS00ZTk5LTg2MTgtNTMyM2Y0Mjc2OTE0XkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_SX300.jpg",
                 "note": []
             },
             {
-                "movie_name": "Dead or Alive",
-                "rating": "6.7",
-                "year": "1999",
-                "director": "Takashi Miike",
-                "movie_id": 4,
-                "poster": "https://m.media-amazon.com/images/M/MV5BZjAyY2JiNDItOThmZS00NWE0LWFjZmUtYzk5Y2Q2YjkzODllL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+                "movie_name": "Mission: Impossible",
+                "rating": "7.1",
+                "year": "1996",
+                "director": "Brian De Palma",
+                "movie_id": 7,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SX300.jpg",
                 "note": []
             }
         ]
     },
-    "7": {
+    "8": {
         "name": "Steffan",
+        "movies": [
+            {
+                "movie_name": "Mission: Impossible",
+                "rating": "7.1",
+                "year": "1996",
+                "director": "Brian De Palma",
+                "movie_id": 1,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SX300.jpg",
+                "note": []
+            },
+            {
+                "movie_name": "Titanic",
+                "rating": "7.9",
+                "year": "1997",
+                "director": "James Cameron",
+                "movie_id": 2,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+                "note": []
+            },
+            {
+                "movie_name": "Ninja",
+                "rating": "5.5",
+                "year": "2009",
+                "director": "Isaac Florentine",
+                "movie_id": 3,
+                "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
+                "note": []
+            },
+            {
+                "movie_name": "Die Another Day",
+                "rating": "6.1",
+                "year": "2002",
+                "director": "Lee Tamahori",
+                "movie_id": 4,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDlmY2Y2ZWQtNTZjMy00NGRkLTlkMjctMjA1MzdjMmI1NTQ1XkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_SX300.jpg",
+                "note": []
+            }
+        ]
+    },
+    "9": {
+        "name": "Steffan Cruz",
         "movies": [
             {
                 "movie_name": "Titanic",
@@ -106,54 +194,36 @@
                 "note": []
             },
             {
-                "movie_name": "Ninja",
-                "rating": "6.7",
-                "year": "2009",
-                "director": "Isaac Florentine",
-                "movie_id": 2,
-                "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
-                "note": "action"
+                "movie_name": "Mission: Impossible",
+                "rating": "7.1",
+                "year": "1996",
+                "director": "Brian De Palma",
+                "movie_id": 3,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SX300.jpg",
+                "note": []
             },
             {
-                "movie_name": "A Classic Horror Story",
-                "rating": "5.7",
-                "year": "2021",
-                "director": "Roberto De Feo, Paolo Strippoli",
-                "movie_id": 3,
-                "poster": "https://m.media-amazon.com/images/M/MV5BNGZmODA3ZjAtMDU4Zi00MWMxLWEzNTAtMGZmMmNjZGFlOTRhXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg",
+                "movie_name": "Die Another Day",
+                "rating": "6.1",
+                "year": "2002",
+                "director": "Lee Tamahori",
+                "movie_id": 4,
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDlmY2Y2ZWQtNTZjMy00NGRkLTlkMjctMjA1MzdjMmI1NTQ1XkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_SX300.jpg",
+                "note": []
+            },
+            {
+                "movie_name": "Do or Die",
+                "rating": "4.3",
+                "year": "1991",
+                "director": "Andy Sidaris",
+                "movie_id": 5,
+                "poster": "https://m.media-amazon.com/images/M/MV5BNDczODhhZmYtNWE2OS00ZTk5LTg2MTgtNTMyM2Y0Mjc2OTE0XkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_SX300.jpg",
                 "note": []
             }
         ]
     },
     "10": {
-        "name": "Die another day",
-        "movies": []
-    },
-    "11": {
-        "name": "Samrat Singh",
-        "movies": [
-            {
-                "movie_name": "Ninja",
-                "rating": "6",
-                "year": "2009",
-                "director": "Isaac Florentine",
-                "movie_id": 1,
-                "poster": "https://m.media-amazon.com/images/M/MV5BYmNiMzFiMWItYzRjMi00NDBlLThlOTUtYTk3OGM0MTVmZWMyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
-                "note": ""
-            },
-            {
-                "movie_name": "Die Another Day",
-                "rating": "7",
-                "year": "2002",
-                "director": "Lee Tamahori",
-                "movie_id": 2,
-                "poster": "https://m.media-amazon.com/images/M/MV5BMDlmY2Y2ZWQtNTZjMy00NGRkLTlkMjctMjA1MzdjMmI1NTQ1XkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_SX300.jpg",
-                "note": ""
-            }
-        ]
-    },
-    "12": {
-        "name": "Ashutosh Kapoor",
+        "name": "Titanic",
         "movies": []
     }
 }

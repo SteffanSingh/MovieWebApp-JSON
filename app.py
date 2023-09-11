@@ -91,6 +91,9 @@ def add_user_movie(user_id):
         data = res.json()
         if data['Response'] == "False":
             return render_template("movie_not_found.html", user_name=user_name,user_id=user_id)
+        for movie in user_movie_list:
+            if movie["movie_name"] == data["Title"]:
+                return render_template("movie_already_exists.html", user_name=user_name, user_id=user_id)
         movie["movie_name"] = data["Title"]
         movie["rating"] = data["imdbRating"]
         movie["year"] = data["Year"]
@@ -98,6 +101,8 @@ def add_user_movie(user_id):
         movie["movie_id"] = len(user_movie_list) + 1
         movie["poster"]= data["Poster"]
         movie["note"]=[]
+
+
         for user in users_list:
             if user_id not in users_id_list:
                 return render_template("users.html")
@@ -105,8 +110,9 @@ def add_user_movie(user_id):
                 users[str(user_id)]["movies"].append(movie)
                 with open("data/data.json", "w") as fileObject:
                     fileObject.write(json.dumps(users, indent=4))
-                return render_template("favourite_movie.html", user_name=user_name, movies=user_movie_list, user_id=user_id)
+                return redirect(url_for("user_movie_list",user_id=user_id))
     return render_template("add_movie.html", user_id=user_id)
+
 
 
 @app.route("/users/<int:user_id>/update_movie/<int:movie_id>", methods=["GET", "POST"])
@@ -133,9 +139,10 @@ def update_movie(user_id, movie_id):
                 return render_template("favourite_movie.html", user_name=user_name, user_id=user_id,movie_id=movie_id,movies=user_movie_list)
     return render_template("update.html", user_name=user_name,movie_id=movie_id, movies=user_movie_list, user_id=user_id)
 
-@app.route("/users/<int:user_id>/delete_movie/<int:movie_id>", methods=["POST"])
+@app.route("/users/<int:user_id>/delete_movie/<int:movie_id>")
 def delete_movie(user_id, movie_id):
     """function to implement to delete a movie with a given id for a given user"""
+
     users_list = data_manager.get_all_users()
     users_id_list = data_manager.get_all_users_id()
     index = users_id_list.index(user_id)
@@ -145,8 +152,10 @@ def delete_movie(user_id, movie_id):
     for movie in user_movie_list:
         if int(movie["movie_id"]) == movie_id:
             users[str(user_id)]["movies"].remove(movie)
-    with open("data/data.json", "w") as fileObject:
-        fileObject.write(json.dumps(users, indent=4))
+            with open("data/data.json", "w") as fileObject:
+                fileObject.write(json.dumps(users, indent=4))
+            return redirect(url_for("user_movie_list",user_id=user_id))
+
     return render_template("favourite_movie.html", user_name=user_name, movies=user_movie_list, user_id=user_id)
 
 
