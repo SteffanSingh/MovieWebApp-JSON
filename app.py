@@ -83,6 +83,11 @@ def add_user_movie(user_id):
     user_movie_list = data_manager.get_user_movies(user_id)
     user = {}
     movie = {}
+    movie_id_list = []
+
+    for movie in user_movie_list:
+        movie_id_list.append(movie["movie_id"])
+
     if request.method == "POST":
         name = request.form["name"]
         Key = "2837c90f"
@@ -98,7 +103,7 @@ def add_user_movie(user_id):
         movie["rating"] = data["imdbRating"]
         movie["year"] = data["Year"]
         movie["director"] = data["Director"]
-        movie["movie_id"] = len(user_movie_list) + 1
+        movie["movie_id"] = max(movie_id_list) + 1
         movie["poster"]= data["Poster"]
         movie["note"]=[]
 
